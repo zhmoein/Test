@@ -115,20 +115,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="style\font-awesome.min.css" />
+    <Content Include="style\font-awesome.css" />
     <Content Include="pTest.html" />
-    <Content Include="Questions.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="TypeABCD.js" />
-    <Content Include="SecondOption.html" />
-    <Content Include="Slide.html" />
-    <Content Include="svg-icons.css" />
-    <Content Include="svg-icons.js" />
+    <Content Include="js\TypeABCD.js" />
+    <Content Include="style\svg-icons.css" />
+    <Content Include="js\svg-icons.js" />
     <Content Include="Web.config" />
     <Content Include="webslide.html" />
-    <Content Include="webslides.css" />
-    <Content Include="webslides.js" />
-    <Content Include="webslides.min.js" />
+    <Content Include="style\webslides.css" />
+    <Content Include="js\webslides.js" />
+    <Content Include="js\webslides.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

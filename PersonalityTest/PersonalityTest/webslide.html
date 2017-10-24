@@ -10,22 +10,36 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <!-- CSS Base -->
-    <link rel="stylesheet" type='text/css' media='all' href="webslides.css">
+    <link rel="stylesheet" type='text/css' media='all' href="style/webslides.css">
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type="text/css" media="all" href="svg-icons.css">
-    <script src="TypeABCD.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="style/svg-icons.css">
+    <script src="js/TypeABCD.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/svg-icons.js"></script> 
+    <link rel="stylesheet" type="text/css" href="style/font-awesome.min.css" />
 </head>
 <body>
-
     <main role="main">
         <article id="webslides">
             <!-- Quick Guide
-              - Each parent <section> in the <article id="webslides"> element is an individual slide.
-              - Vertical sliding = <article id="webslides" class="vertical">
-              - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-            -->
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+
+                    <p style="font-size:70px">
+                        <strong>Personality Test</strong> 
+                    </p>
+
+                </div>
+            </section>
+
             <section class="bg-apple aligncenter">
                 <!--.wrap = container (width: 90%) -->
+                <!--Ning--Type ABCD 1-16-->
                 <div class="wrap">
                     <p id="1">
                         <strong>You are hardly ever satisfied with your achievments.</strong><br>
@@ -58,8 +72,8 @@
                         <input class="TypeA" type="radio" name="radio2" value="0">
                         Totally disagree
                     </p>
-                    </div>
-</section>   
+                </div>
+            </section>
             <section class="bg-apple aligncenter">
                 <div class="wrap">
                     <p id="3">
@@ -92,8 +106,8 @@
                         <input class="TypeA" type="radio" name="radio4" value="0">
                         Totally disagree
                     </p>
-                    </div>
-</section>
+                </div>
+            </section>
             <section class="bg-apple aligncenter">
                 <div class="wrap">
                     <p id="5">
@@ -109,8 +123,8 @@
                         <input class="TypeB" type="radio" name="radio5" value="0">
                         Totally disagree
                     </p>
-                    </div>
-                </section>
+                </div>
+            </section>
             <section class="bg-apple aligncenter">
                 <div class="wrap">
                     <p id="6">
@@ -126,8 +140,8 @@
                         <input class="TypeB" type="radio" name="radio6" value="0">
                         Totally disagree
                     </p>
-                    </div>
-</section>
+                </div>
+            </section>
             <section class="bg-apple aligncenter">
                 <div class="wrap">
                     <p id="7">
@@ -143,17 +157,249 @@
                         <input class="TypeB" type="radio" name="radio7" value="0">
                         Totally disagree
                     </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="8">
+                        <strong>It doesn't bother you if you cannot finish what you planned for the day.</strong><br>
+                        <input class="TypeB" type="radio" name="radio8" value="100">
+                        Totally agree
+                        <input class="TypeB" type="radio" name="radio8" value="75">
+                        Agree
+                        <input class="TypeB" type="radio" name="radio8" value="50">
+                        I am not sure
+                        <input class="TypeB" type="radio" name="radio8" value="25">
+                        Disagree
+                        <input class="TypeB" type="radio" name="radio8" value="0">
+                        Totally disagree
+                    </p>
+
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="9">
+                        <strong>You are often irritable.</strong><br>
+                        <input class="TypeC" type="radio" name="radio9" value="100">
+                        Totally agree
+                        <input class="TypeC" type="radio" name="radio9" value="75">
+                        Agree
+                        <input class="TypeC" type="radio" name="radio9" value="50">
+                        I am not sure
+                        <input class="TypeC" type="radio" name="radio9" value="25">
+                        Disagree
+                        <input class="TypeC" type="radio" name="radio9" value="0">
+                        Totally disagree
+                    </p>
+
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="10">
+                        <strong>You always find hard time when rules change.</strong><br>
+                        <input class="TypeC" type="radio" name="radio10" value="100">
+                        Totally agree
+                        <input class="TypeC" type="radio" name="radio10" value="75">
+                        Agree
+                        <input class="TypeC" type="radio" name="radio10" value="50">
+                        I am not sure
+                        <input class="TypeC" type="radio" name="radio10" value="25">
+                        Disagree
+                        <input class="TypeC" type="radio" name="radio10" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="11">
+                        <strong>You think you are a pessimist.</strong><br>
+                        <input class="TypeC" type="radio" name="radio11" value="100">
+                        Totally agree
+                        <input class="TypeC" type="radio" name="radio11" value="75">
+                        Agree
+                        <input class="TypeC" type="radio" name="radio11" value="50">
+                        I am not sure
+                        <input class="TypeC" type="radio" name="radio11" value="25">
+                        Disagree
+                        <input class="TypeC" type="radio" name="radio11" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="12">
+                        <strong>You perfer doing some repetitive jobs.</strong><br>
+                        <input class="TypeC" type="radio" name="radio12" value="100">
+                        Totally agree
+                        <input class="TypeC" type="radio" name="radio12" value="75">
+                        Agree
+                        <input class="TypeC" type="radio" name="radio12" value="50">
+                        I am not sure
+                        <input class="TypeC" type="radio" name="radio12" value="25">
+                        Disagree
+                        <input class="TypeC" type="radio" name="radio12" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="13">
+                        <strong>You look for what could go wrong.</strong><br>
+                        <input class="TypeD" type="radio" name="radio13" value="100">
+                        Totally agree
+                        <input class="TypeD" type="radio" name="radio13" value="75">
+                        Agree
+                        <input class="TypeD" type="radio" name="radio13" value="50">
+                        I am not sure
+                        <input class="TypeD" type="radio" name="radio13" value="25">
+                        Disagree
+                        <input class="TypeD" type="radio" name="radio13" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="14">
+                        <strong>It is hard for you to express your feelings.</strong><br>
+                        <input class="TypeD" type="radio" name="radio14" value="100">
+                        Totally agree
+                        <input class="TypeD" type="radio" name="radio14" value="75">
+                        Agree
+                        <input class="TypeD" type="radio" name="radio14" value="50">
+                        I am not sure
+                        <input class="TypeD" type="radio" name="radio14" value="25">
+                        Disagree
+                        <input class="TypeD" type="radio" name="radio14" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="15">
+                        <strong>You have very high standards, especially for yourself. You can be a perfectionist.</strong><br>
+                        <input class="TypeD" type="radio" name="radio15" value="100">
+                        Totally agree
+                        <input class="TypeD" type="radio" name="radio15" value="75">
+                        Agree
+                        <input class="TypeD" type="radio" name="radio15" value="50">
+                        I am not sure
+                        <input class="TypeD" type="radio" name="radio15" value="25">
+                        Disagree
+                        <input class="TypeD" type="radio" name="radio15" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <p id="16">
+                        <strong>You rarely speak up at meetings.</strong><br>
+                        <input class="TypeD" type="radio" name="radio16" value="100">
+                        Totally agree
+                        <input class="TypeD" type="radio" name="radio16" value="75">
+                        Agree
+                        <input class="TypeD" type="radio" name="radio16" value="50">
+                        I am not sure
+                        <input class="TypeD" type="radio" name="radio16" value="25">
+                        Disagree
+                        <input class="TypeD" type="radio" name="radio16" value="0">
+                        Totally disagree
+                    </p>
+                </div>
+                <!--//footer-->
+                <!--<footer>
+                <span class="alignright">
+                    <button type="button" class="btn bg-light" onclick="checkAllQuestions()">
+                        Submit Questions
+                    </button>
+                </span>
+            </footer>-->
+            </section>
+
+            <!--result page-->
+                <section class="bg-apple aligncenter">
+                        <div class="wrap">
+                            <form class="alignleft">
+                                <!--<script>
+                    checkAllQuestions();
+                </script>-->
+                                <!--<input type="button" value="resultTypeA" onclick="getScoreTypeA()" />
+                <input type="button" value="resultTypeB" onclick="getScoreTypeB()" />
+                <input type="button" value="resultTypeC" onclick="getScoreTypeC()" />
+                <input type="button" value="resultTypeD" onclick="getScoreTypeD()" />
+                <input type="button" value="submit"-->
+                                <!--onclick="checkAllQuestions()" />-->
+
+                                <input type="button" value="show result" onclick="showTypeResults()" />
+
+
+                                <div class="grid">
+                                    <div class="column" id="typeResults">
+                                        <p id="Type1"></p>
+                                        <!--<p id="Type2"></p>-->
+                                    </div>
+                                    <div class="column">
+                                        <p>ssssssssss</p>
+                                        <p>sssssssssasfagdwfgqiwgiugqwigqdiqs</p>
+
+                                    </div>
+                                    <div class="column">
+                                        <p>ssssssssss</p>
+                                        <p>sssssssssasfagdwfgqiwgiugqwigqdiqs</p>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                   
+</section>
+           
+            <!--details-->
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <div class="grid sms">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+
+                        </div>
                     </div>
-</section>     
-</article>
+                    </div>
+                </section>
+
+        </article>
     </main>
     <!--main-->
     <!-- Required -->
-    <script src="webslides.js"></script>
+    <script src="js/webslides.js"></script>
     <script>
-      window.ws = new WebSlides();
+
+        const ws1 = new WebSlides(
+            {
+            autoslide : false,
+            changeOnClick : false,
+            loop : false,
+            showIndex : false
+            });
+       
+
+
+        //window.ws1();
+
     </script>
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="svg-icons.js"></script>
+
 </body>
 </html>

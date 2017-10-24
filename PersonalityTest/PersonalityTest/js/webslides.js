@@ -814,7 +814,7 @@ var WebSlides = function () {
         _ref$changeOnClick = _ref.changeOnClick,
         changeOnClick = _ref$changeOnClick === undefined ? false : _ref$changeOnClick,
         _ref$loop = _ref.loop,
-        loop = _ref$loop === undefined ? true : _ref$loop,
+        loop = _ref$loop === undefined ? false : _ref$loop,
         _ref$minWheelDelta = _ref.minWheelDelta,
         minWheelDelta = _ref$minWheelDelta === undefined ? 40 : _ref$minWheelDelta,
         _ref$navigateOnScroll = _ref.navigateOnScroll,
@@ -824,7 +824,7 @@ var WebSlides = function () {
         _ref$slideOffset = _ref.slideOffset,
         slideOffset = _ref$slideOffset === undefined ? 50 : _ref$slideOffset,
         _ref$showIndex = _ref.showIndex,
-        showIndex = _ref$showIndex === undefined ? true : _ref$showIndex;
+        showIndex = _ref$showIndex === undefined ? false : _ref$showIndex;
 
     _classCallCheck(this, WebSlides);
 
