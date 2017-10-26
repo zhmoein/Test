@@ -115,6 +115,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\Colors.js" />
     <Content Include="style\font-awesome.min.css" />
     <Content Include="style\font-awesome.css" />
     <Content Include="pTest.html" />
