@@ -29,14 +29,13 @@
 
             <section class="bg-apple aligncenter">
                 <div class="wrap">
-
                     <p style="font-size:70px">
                         <strong>Personality Test</strong> 
                     </p>
 
                 </div>
             </section>
-
+//page2
             <section class="bg-apple aligncenter">
                 <!--.wrap = container (width: 90%) -->
                 <!--Ning--Type ABCD 1-16-->
@@ -388,18 +387,34 @@
 
         const ws1 = new WebSlides(
             {
-            autoslide : false,
-            changeOnClick : false,
-            loop : false,
-            showIndex : false
+                autoslide : false,
+                changeOnClick : false,
+                loop : false,
+                showIndex: false,
+                navigateOnScroll: false
             });
-       
+        //check answers
+        $("a#next").click(function ()
+        {
+            var temp = $("span#counter").text();
+            var page = temp.split('/')[0]-1;
+            //alert(page);
+            var radio = "radio" + (page-1);
+            //alert(radio);
+            //is selected
+            if ($("input[name='" + radio + "']:checked").length)
+            {
+                //alert("good");
+            }
+            else {
+                alert('You have to choose one choice!');
+                window.location.href = "#" + "slide=" + page;
+            }
 
-
-        //window.ws1();
-
+        });
     </script>
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
 
 </body>
 </html>
+

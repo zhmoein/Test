@@ -55,8 +55,39 @@ function getScoreTypeD() {
     scoreTypeD = calcscoreD();
     //alert(scoreTypeD);
     return scoreTypeD;
-}
-function checkAllQuestions() {
+} 
+//function getPage()
+//{
+//    $("a#next").click(function ()
+//    {
+//        var temp = $("span#counter").text();
+//        var page = temp.split('/')[0];
+//        alert(page);
+//        return page;
+//    });
+//}
+//function checkAllQuestions() 
+//{
+//    alert(page);
+//    var radio = "radio" + page;
+//    alert(radio);
+//        //is selected
+//        if ($("input[name='" + radio + "']:checked").length) 
+//        {
+//            alert("good");
+//        }
+//        else 
+//        {
+//            alert('You have to choose one choice!');
+//            window.location.href = "#" + "slide=" + i;
+//        }
+
+//    }
+
+
+
+function checkAllQuestions_original() {
+
     for (var i = 1; i <= 16; i++)
     {
         var radio = "radio" + i;
