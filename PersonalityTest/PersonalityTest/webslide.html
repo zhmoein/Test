@@ -569,17 +569,7 @@ describe me as:</strong><br>
                 <section class="bg-apple aligncenter">
                         <div class="wrap">
                             <form class="alignleft">
-                                <!--<script>
-                    checkAllQuestions();
-                </script>-->
-                                <!--<input type="button" value="resultTypeA" onclick="getScoreTypeA()" />
-                <input type="button" value="resultTypeB" onclick="getScoreTypeB()" />
-                <input type="button" value="resultTypeC" onclick="getScoreTypeC()" />
-                <input type="button" value="resultTypeD" onclick="getScoreTypeD()" />
-                <input type="button" value="submit"-->
-                                <!--onclick="checkAllQuestions()" />-->
-
-                                <input type="button" value="show result" onclick="showColorResults()" />
+                                <!--<input type="button" value="show result" onclick="" />-->
 <!--showTypeResults()-->
 
                                 <div class="grid">
@@ -644,13 +634,24 @@ describe me as:</strong><br>
             var radio = "radio" + (page-1);
             //alert(radio);
             //is selected
-            if ($("input[name='" + radio + "']:checked").length)
+            if ($("input[name='" + radio + "']").length)
             {
-                //alert("good");
+                //alert("exist");
+                if ($("input[name='" + radio + "']:checked").length)
+                {
+                    //alert("good");
+                }
+                else {
+                    alert('You have to choose one choice!');
+                    window.location.href = "#" + "slide=" + page;
+                }
             }
-            else {
-                alert('You have to choose one choice!');
-                window.location.href = "#" + "slide=" + page;
+            //if  to the result page
+            if (page==32)
+            {
+                //alert("result");
+                showColorResults();
+                showTypeResults();
             }
 
         });
